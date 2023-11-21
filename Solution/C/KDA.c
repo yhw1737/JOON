@@ -10,9 +10,8 @@ int main() {
             printf("Perfect\n");
         }
         else{
-            double dd = (k+a)/d*10;
-            double di = round(dd)/10;
-            printf("%.1lf\n",di);
+            double dd = (k+a)/d;
+            printf("%.1lf\n",dd);
         }
     }
 }
