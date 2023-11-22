@@ -6,10 +6,11 @@ int main()
     int t;
     cin >> t;
     while(t--){
-        double a, s, d, m;
+        double a, s, d, m, ans;
         cin >> a >> s >> d >> m;
         cout << fixed;
         cout.precision(1);
-        cout << a * floor(m * s) * (100 / (100 + d)) << '\n';
+        ans = floor(a * floor(m * s) * (100 / (100 + d)) * 10 + 0.5) / 10;
+        cout << ans << '\n';
     }
 }

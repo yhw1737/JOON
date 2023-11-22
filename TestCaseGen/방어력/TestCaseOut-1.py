@@ -7,4 +7,4 @@ for t in range(T):
 	for i in range(t):
 		l=list(map(float,o.readline().strip().split()))
 		i=l[0] * math.floor(l[3] * l[1]) * (100 / (100 + l[2]))
-		o2.write("%0.1f"%i+'\n')
+		o2.write("%0.1f\n"%(math.floor(i*10+0.5)/10))
