@@ -1,0 +1,52 @@
+#제목
+Pay Grade
+#문제
+Pay grades are used by the eight structurally organized uniformed services of the United States
+to determine wages and benefits based on the corresponding military rank of a member of the services.
+Sort the enlisted personnels according to the given table.
+Rank | Pay grade
+PVT | E1
+PV2 | E2
+PFC | E3
+SPC, CPL | E4
+SGT | E5
+SSG | E6
+SFC | E7
+MSG, 1SG | E8
+SGM, CSM | E9
+#입력
+The first line indicates the number of soldiers(0 < T < 10).
+Each line consistes of the soldiers name and rank.
+Soldiers' name does not exceed 10 characters.
+#출력
+Sort the soldiers by their pay grade.
+Use ascending sort, blank pay grade would be disregarded.
+#예제 입력
+[1]
+3
+SGT Robin
+PFC Lee
+SFC Green
+[2]
+6
+SPC Brown
+MSG Nicolas
+CPL Daisy
+1SG Gipson
+SGM Lopez
+CSM Loza
+#예제 출력
+[1]
+E3 Lee
+E5 Robin
+E7 Green
+[2]
+E4 Brown Daisy
+E8 Nicolas Gipson
+E9 Lopez Loza
+#태그
+문자열, 구현
+#알고리즘
+문자열 체크하고 배열에 넣음.
+#키포인트
+없다

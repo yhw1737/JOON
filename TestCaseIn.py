@@ -1,12 +1,11 @@
 import random
-T = 300
+rl = ['PVT','PV2','PFC','SPC','CPL','SGT','SSG','SFC','MSG','1SG','SGM','CSM']
+nl = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p']
+T = 10
 for t in range(T):
     o=open("%d.in"%(t+1),"w")
-    a=random.randrange(30)
-    b="1"
-    c="1"
-    for _ in range(a):
-        b+=random.choice(['0','1'])
-        c+=random.choice(['0','1'])
-    o.write(b.lstrip('0')+'\n'+c.lstrip('0'))
-    o.close()
+    o.write('9\n')
+    for i in range(9):
+        r=random.choice(rl)
+        n=random.choice(nl)
+        o.write('%s %s\n'%(r,n))
