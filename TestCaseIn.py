@@ -1,10 +1,10 @@
 import random
-T = 1
+T = 10
 for t in range(T):
     o=open("%d.in"%(t+1),"w")
-    o.write("100\n")
+    o.write('100\n')
     for i in range(100):
-        n=random.randint(1,50)
-        m=random.randint(1,100)
-        o.write("%d %d\n"%(n,m))
+        k=random.randrange(1, 500)
+        d=random.randrange(500, 10000)
+        o.write('%d %d\n'%(k,d))
     o.close()

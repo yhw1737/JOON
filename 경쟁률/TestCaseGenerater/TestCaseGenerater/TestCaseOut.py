@@ -1,8 +1,7 @@
-import math
+
 def my_round(num:float)->int:
     if num < 0:
         return -my_round(-num)
-    
     if num - int(num) >= 0.5:
         return int(num) + 1
     else:
@@ -14,6 +13,6 @@ for t in range(T):
     t=int(o.readline().strip())
     for i in range(t):
         k,d=map(int,o.readline().strip().split())
-        o2.write('%.0f:1\n'%my_round((d-k)/k))
+        o2.write('%.1f:1\n'%(my_round(d/k*10)/10))
     o.close()
     o2.close()

@@ -6,6 +6,6 @@ int main() {
     while(t--){
         double n,m;
         scanf("%lf %lf",&n,&m);
-        printf("%.0lf:1\n",round((m-n)/n));
+        printf("%.1lf:1\n",round(m/n*10)/10);
     }
 }
