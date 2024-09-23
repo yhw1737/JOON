@@ -1,6 +1,3 @@
-import zipfile
-import os
-
 m=[]
 def spread(x,y,h):
     global m
@@ -32,12 +29,3 @@ for t in range(T):
     
     o.close()
     o2.close()
-
-z=zipfile.ZipFile("TestCase.zip","w")
-for t in range(T):
-    z.write("%d.in"%(t+1))
-    z.write("%d.out"%(t+1))
-z.close()
-for t in range(T):
-    os.remove("%d.in"%(t+1))
-    os.remove("%d.out"%(t+1))
